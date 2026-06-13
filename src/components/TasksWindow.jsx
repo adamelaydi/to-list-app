@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import TaskCard from "./TaskCard"
 import "../styling/taskWindow.css"
-import NoTaskYet from "./noTaskYet"
+import NoTaskYet from "./NoTaskYet"
 import { useReducer  } from "react"
 import filterReducer from "../reducers/filterReducer"
 import taskWindowReducer from "../reducers/taskWindowReducer"
