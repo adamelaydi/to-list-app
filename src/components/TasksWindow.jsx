@@ -6,24 +6,15 @@ import { useReducer  } from "react"
 import filterReducer from "../reducers/filterReducer"
 import taskWindowReducer from "../reducers/taskWindowReducer"
 import { useToast } from "../context/toastContext"
+import '../styling/taskListStyle.css'
 //#region styling
 const listStyle={
-        position:"absolute",
-        top:"0px",
-        left:"0px",
-        height:"90vh",
-        width:"100%",
-        backgroundColor:"#F4F6F8",
-        display:"flex",
-        flexDirection:"column",
-        justifyContent:"space-between",
-        alignItems:"center",
-        zIndex:"25",
+       
     }
     const TasksStyle={
     borderRadius:"15px",
     height:"70vh",
-    width:"100%",
+    width:"95%",
     backgroundColor:"#d8eafc6b",
     overflow:"scroll"
 }
@@ -49,7 +40,7 @@ const [filterTasks,filterDispatch]=useReducer(filterReducer,TaskWindowState);
 const {showHideTask}= useToast();    
 
 return(
-        <section style={listStyle}>
+        <section className="taskWindow" style={listStyle}>
             <h1 style={headingStyle}>My Tasks</h1>
             <div className="filter">
                 <NavLink to="/" className={({isActive})=>{return (isActive)?"active":"not";}} >
@@ -79,7 +70,7 @@ return(
                                 key={d.id}
                                 prop={d}
                             />
-                        )) 
+                        ))  
                         }
             </div>
         </section>

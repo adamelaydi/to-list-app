@@ -10,7 +10,7 @@ import NotFound from './components/NotFound'
 import 'react-router-dom'
 import { Route, Routes } from 'react-router-dom'
   // Styling
-import './App.css'
+import './styling/App.css'
   //state
   import { ToastProvider } from './context/toastContext'
   import { useState } from 'react'
@@ -26,7 +26,7 @@ const [todo ,setTodo]=useState({title: " ",content:" "});
 //#endregion
 
   return (
-    <div>
+    <div className="app">
             <AddButton />
               <ToastProvider >
                 <taskEditeContext.Provider value={{todo,setTodo}}>

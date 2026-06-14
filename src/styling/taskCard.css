@@ -1,0 +1,72 @@
+.card{
+    position: relative;
+    height: fit-content;
+    border: 1px #b0afaf solid;
+    background-color: rgb(128, 190, 244);
+    margin: 15px;
+}
+.card h3{
+    background-color: aliceblue;
+    overflow: hidden;
+    padding: 7px;
+    border-radius: 7px;
+}
+.card .id{
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    background-color: rgb(6, 108, 163);
+    color: white;
+    width: 60px;
+    height: 45px;
+    border-radius:50% ;
+    overflow: hidden;
+    text-align: center;
+}
+.card .content{
+    background-color: aliceblue;
+    overflow: hidden;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 10px 0;
+    height: 60px;
+    border: 1px #a3a2a2 solid;
+}
+.card .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card .info .btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card .info .btns button{
+    padding: 1px 5px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.card .info .btns .complete{
+    background-color: #03a456;
+}
+.card .info .btns .delete{
+    background-color: #a10505;
+}
+.card .info .btns .show{
+    background-color: #716e6e;
+}
+.card .info .btns .edite{
+    background-color: #e7be3bca;
+}
+.card .info .date{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+}

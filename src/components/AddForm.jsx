@@ -3,7 +3,7 @@ import {useState} from "react"
 import { useToast } from "../context/toastContext"
 import { useReducer ,useEffect} from "react"
 import taskWindowReducer from "../reducers/taskWindowReducer"
-
+import '../styling/addFormStyling.css'
 //#region styling
 const formStyle={
     backgroundColor:"rgba(10, 178, 234, 0.58)",
@@ -41,16 +41,6 @@ const ButtonStyling={
                         textTransform:"capitalize",
                         color:"#777"
                     }
-const popUpStyling={
-                width:"100%",
-                height:"100vh",
-                background:"#777",
-                zIndex:"100000",
-                position:"relative",
-                top:"0px",
-                left:"0px",
-                zindex:"9999"
-            }
 const headingStyle={
                         fontSize:"35px",
                         fontWeight:"800",
@@ -72,7 +62,7 @@ export default function AddForm(){
     const {showHideTask}= useToast();    
     return(
         <>  
-            <div className="popUp" style={popUpStyling}>
+            <div className="popUp">
                 <div style={formStyle}>
                     <h1 style={headingStyle}>Adding task</h1>
                     <input style={InputStyling} type="text" onChange={(e)=>{setTaskData({...Taskdata,title:e.target.value});}} value={Taskdata.title} placeholder="Task Title ..."/>

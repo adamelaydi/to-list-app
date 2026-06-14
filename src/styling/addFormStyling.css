@@ -1,0 +1,8 @@
+.pupUp{
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    position: relative;
+    top: 0px;
+    left: 0;
+}
