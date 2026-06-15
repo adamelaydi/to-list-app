@@ -23,6 +23,4 @@ It helps users add, edit, delete, and manage their daily tasks efficiently.
 - CSS / Material UI (if you used it)
 - Local Storage API
 
----
 
-## 📂 Project Structure
